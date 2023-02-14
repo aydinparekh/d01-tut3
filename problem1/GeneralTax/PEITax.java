@@ -5,9 +5,4 @@ public class PEITax extends Tax{
     protected double getTaxRate() {
         return 0.15;
     }
-
-    @Override
-    public double calculateTotalTax(double total) {
-        return total * this.getTaxRate();
-    }
 }

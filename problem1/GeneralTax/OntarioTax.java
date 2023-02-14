@@ -5,9 +5,4 @@ public class OntarioTax extends Tax{
     protected double getTaxRate() {
         return 0.13;
     }
-
-    @Override
-    public double calculateTotalTax(double total) {
-        return total * this.getTaxRate();
-    }
 }

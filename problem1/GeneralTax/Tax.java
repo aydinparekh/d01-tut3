@@ -8,6 +8,8 @@ public abstract class Tax {
 
     protected abstract double getTaxRate();
 
-    public abstract double calculateTotalTax(double total);
+    public double calculateTotalTax(double total){
+        return total * (this.getTaxRate());
+    }
 
 }
