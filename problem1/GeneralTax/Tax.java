@@ -5,12 +5,11 @@
 package GeneralTax;
 
 public abstract class Tax {
-    protected double getTaxRate() {
-        return 0.0;
-    }
 
-    public double calculateTotalTax(double total) {
-        return getTaxRate() * total;
+    protected abstract double getTaxRate();
+
+    public double calculateTotalTax(double total){
+        return total * (this.getTaxRate());
     }
 
 }
