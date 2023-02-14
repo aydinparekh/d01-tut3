@@ -5,18 +5,10 @@
 package GeneralTax;
 
 public abstract class Tax {
-    protected double getPstRate() {
-        return 0.0;
-    }
 
-    protected double getGstRate() {
-        return 0.0;
-    }
-
-    protected double getHstRate() {
-        return 0.0;
-    }
-
+    protected abstract double getPstRate();
+    protected abstract double getGstRate();
+    protected abstract double getHstRate();
     private double calculatePstTax(double total) {
         return getPstRate() * total;
     }
